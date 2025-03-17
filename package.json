@@ -1,0 +1,26 @@
+{
+  "name": "wp-react-dashboard-widget",
+  "version": "1.0.0",
+  "description": "A WordPress Dashboard Widget using React",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@wordpress/scripts": "^25.0.0",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^8.2.3",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "tailwindcss": "^4.0.14",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
