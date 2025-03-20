@@ -25,10 +25,14 @@ function wp_react_dashboard_widget_display() {
 function wp_react_dashboard_widget_assets() {
     // Enqueue Tailwind CSS from CDN
     wp_enqueue_style(
-        'tailwindcss',
-        'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.5/tailwind.min.css',
+        // 'tailwindcss',
+        // 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.5/tailwind.min.css',
+        // array(),
+        // null
+       'tailwindcss',
+        plugin_dir_url(__FILE__) . 'src/output.css',
         array(),
-        null
+        filemtime(plugin_dir_path(__FILE__) . 'src/output.css')
     );
     
 
