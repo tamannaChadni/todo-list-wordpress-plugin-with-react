@@ -54,7 +54,7 @@ const App = () => {
         {tasks.map((task, index) => (
           <li 
             key={index} 
-            className={`flex justify-between items-center p-3  bg-amber-200 rounded-md shadow ${task.completed ? "line-through text-gray-400" : ""}`}
+            className={`flex justify-between items-center p-3  text-cyan-400 bg-amber-200 rounded-md shadow ${task.completed ? "line-through text-black" : ""}`}
           >
             {task.text}
             <div className="flex gap-2">
